@@ -1,0 +1,361 @@
+@import url('https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Open+Sans:wght@300;400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Dark background & light text by default */
+body {
+  background: #121212; 
+  font-family: 'Open Sans', sans-serif;
+  color: #0310fd; /* overall text color (e.g. for body text elsewhere) */
+  min-height: 100vh;
+  position: relative;
+}
+
+/* Bubble Name Animation */
+@keyframes slideInLeft {
+  0% {
+      transform: translateX(-100%); /* Start off-screen to the left */
+      opacity: 0; /* Invisible at the start */
+  }
+  50% {
+      opacity: 1; /* Fade in */
+  }
+  100% {
+      transform: translateX(0); /* Position at its final place */
+      opacity: 1; /* Fully visible */
+  }
+}
+
+/* Apply the animation to bubble name */
+.name-header {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  font-size: 3.5rem; 
+  font-family: 'Kaushan Script', cursive;
+  text-shadow: 1px 1px #666;
+  /* animation: slideInLeft 1.5s ease-out; Duration and easing of animation */
+}
+
+
+.name-header span {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+  margin: 0 1px;
+}
+
+.name-header span:hover {
+  transform: scale(1.2) rotate(5deg);
+  color: #ff5500;
+}
+
+/* NAV BOX (left) */
+.nav-box {
+  position: absolute;
+  top: 100px;
+  left: 50px;
+  width: 300px;
+  height: 400px;
+  background-color: #1e1e1e;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 1rem;
+  transition: transform 0.3s ease;
+  z-index: 2;
+}
+.nav-box:hover {
+  transform: scale(1.02);
+}
+.nav-box ul {
+  list-style: none;
+  margin-top: 1rem;
+}
+.nav-box li {
+  margin-bottom: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.nav-box li:hover {
+  color: #2f5bea;
+}
+.nav-box a {
+  text-decoration: none;
+  color: #03a1fd;
+}
+
+/* CONTENT BOX (right), 825px tall */
+.content-box {
+  position: absolute;
+  top: 100px;
+  left: 380px;
+  width: calc(100% - 430px);
+  height: 825px; 
+  background-color: #1e1e1e;
+  border: 2px solid #555;
+  border-radius: 8px;
+  padding: 2rem;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 1;
+  /* Make ALL text inside white by default: */
+  color: #fff;
+}
+.content-box:hover {
+  transform: scale(1.02);
+}
+
+.main-title {
+  font-family: 'Kaushan Script', cursive;
+  font-size: 2.5rem;
+  color: #03a1fd; /* Headings remain this custom color */
+  margin-bottom: 1rem;
+}
+.sub-heading {
+  font-size: 1.8rem;
+  margin: 1rem 0;
+  color: #05a0fa; /* Subheading also keeps its custom color */
+  font-weight: 300;
+}
+.content-box p {
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  /* color: #fff;  <-- now inherited from .content-box */
+}
+
+/* ASCII DONUT STYLES: permanently in dark theme color */
+#donut {
+  position: absolute;
+  bottom: 0px;
+  left: 40px;
+  color: #0909f5; /* Replaced #FFD93D with dark blue */
+  font-family: monospace;
+  font-size: 8px;
+  line-height: 1;
+  white-space: pre;
+  margin: 0;
+  padding: 10px;
+  transform: scale(1);
+  background-color: transparent;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Responsive adjustments for smaller screens */
+@media (max-width: 768px) {
+  #donut {
+      font-size: 6px;
+      padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  #donut {
+      display: none; /* Hide donut on very small screens */
+  }
+}
+
+/* Position the profile photo at the top-right of the content box */
+.profile-photo {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 270px; /* Increased size (1.5x the previous 180px) */
+  height: 270px; /* Maintain aspect ratio */
+  border-radius: 50%; /* Make it circular */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for depth */
+}
+
+
+/* Align the content text on the left */
+.content-box {
+  position: relative; /* Needed for positioning the image */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 2rem;
+}
+
+.content-text {
+  margin-right: 140px; /* Create space for the photo on the right */
+}
+
+/* Employment Timeline Styles */
+.employment-timeline {
+  margin-top: 1rem;
+}
+
+.employment-entry {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #03a1fd; /* Vertical line indicating the timeline */
+}
+
+.employment-entry h3 {
+  font-size: 1.5rem;
+  color: #03a1fd; /* Match your theme */
+  margin-bottom: 0.5rem;
+}
+
+.employment-dates {
+  font-size: 0.9rem;
+  color: #666; /* Muted color for dates */
+  margin-bottom: 0.5rem;
+}
+
+.employment-entry ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.employment-entry ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Education Section Styles */
+.education-section {
+  margin-top: 1rem;
+}
+
+.education-entry {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #03a1fd; /* Vertical line for structure */
+}
+
+.education-entry h3 {
+  font-size: 1.5rem;
+  color: #03a1fd; /* Theme color for headings */
+  margin-bottom: 0.5rem;
+}
+
+.education-dates {
+  font-size: 0.9rem;
+  color: #666; /* Muted color for dates */
+  margin-bottom: 0.5rem;
+}
+
+.education-entry ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.education-entry ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+
+/* Skills List Styling */
+.skills-list {
+  margin-top: 1rem;
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0; /* Remove left padding */
+}
+
+.skills-list li {
+  margin-bottom: 1rem; /* Space between each skill */
+  font-size: 1.1rem;
+  line-height: 1.5; /* Improve readability */
+}
+
+.skills-list strong {
+  color: #03a1fd; /* Highlight skill names in theme color */
+}
+
+
+/* Achievements List Styling */
+.achievements-list {
+  margin-top: 1rem;
+  list-style-type: none; /* Remove default bullet points */
+  padding-left: 0;
+}
+
+.achievements-list > li {
+  margin-bottom: 1.5rem; /* Space between major categories */
+  font-size: 1.1rem;
+}
+
+.achievements-list > li strong {
+  color: #03a1fd; /* Highlight main categories with theme color */
+}
+
+.achievements-list ul {
+  list-style-type: disc; /* Add bullet points to sub-items */
+  padding-left: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.achievements-list ul li {
+  margin-bottom: 0.5rem; /* Space between sub-items */
+}
+
+.achievements-list a {
+  color: #03a1fd; /* Make links match the theme color */
+  text-decoration: none;
+}
+
+.achievements-list a:hover {
+  text-decoration: underline; /* Add underline on hover */
+}
+
+
+/* Projects Section Styling */
+.projects-section {
+  margin-top: 1rem;
+}
+
+.project-entry {
+  margin-bottom: 2rem;
+  padding-left: 1rem;
+  border-left: 3px solid #03a1fd; /* Add a vertical line for structure */
+}
+
+.project-entry h3 {
+  font-size: 1.5rem;
+  color: #03a1fd;
+  margin-bottom: 0.5rem;
+}
+
+.project-dates {
+  font-size: 0.9rem;
+  color: #666;
+  margin-bottom: 0.5rem;
+}
+
+.project-entry ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+}
+
+.project-entry ul li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+/* Contact Links */
+.contact-links {
+  margin-top: 1.5rem;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.contact-link {
+  font-size: 1rem;
+  color: #03a1fd; /* Theme color for links */
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.contact-link:hover {
+  color: #007bb5; /* Darker blue for hover */
+  transform: scale(1.1); /* Slight zoom effect */
+}
