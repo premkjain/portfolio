@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prem Kamal Jain - Software Engineer Portfolio</title>
+
+    <link rel="icon" href="assets/favicon.png" type="image/png">
+
+    <meta property="og:title" content="Prem Kamal Jain - Portfolio">
+    <meta property="og:description" content="Portfolio of Prem Kamal Jain, a software engineer specializing in Computer Science and Biosciences.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="YOUR_LIVE_PORTFOLIO_URL_HERE"> 
+    <meta property="og:image" content="YOUR_PREVIEW_IMAGE_URL_HERE"> 
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Prem Kamal Jain - Portfolio">
+    <meta name="twitter:description" content="Portfolio of Prem Kamal Jain, a software engineer specializing in Computer Science and Biosciences.">
+    <meta name="twitter:image" content="YOUR_PREVIEW_IMAGE_URL_HERE">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Courier+Prime:wght@400;700&family=Source+Code+Pro:wght@400;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="print.css" media="print">
+</head>
+<body data-theme="light">
+
+    <div class="theme-toggle-container">
+        <button id="theme-toggle-button" aria-label="Toggle theme" title="Toggle theme">
+            <i class="fas fa-moon"></i>
+        </button>
+    </div>
+
+    <div class="wrapper">
+        <canvas id="background-canvas"></canvas>
+        <div class="introduction-canvas--overflow"></div>
+        <h1>Prem Kamal Jain</h1>
+        <!-- SCROLL DOWN CUE BUTTON - ENSURED IT'S HERE -->
+        <button id="scroll-down-cue" aria-label="Scroll to content" title="Scroll down">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </div>
+
+    <div class="container">
+        <header id="header">
+            <h2 class="content-h1">PREM KAMAL JAIN</h2>
+            <div class="contact-info">
+                <a href="tel:+91-9315614183"><i class="fas fa-phone"></i> +91-9315614183</a>
+                <span class="separator">|</span>
+                <a href="mailto:premkjain21@gmail.com"><i class="fas fa-envelope"></i> premkjain21@gmail.com</a>
+                <span class="separator">|</span>
+                <a href="https://linkedin.com/in/premkjain" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+                <span class="separator">|</span>
+                <a href="https://github.com/premkjain" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            </div>
+        </header>
+
+        <main>
+            <section id="about" class="resume-section animate-slide-in-left">
+                <h2>About Me</h2>
+                <div class="about-content">
+                    <img src="assets/pkj.jpg" alt="Prem Kamal Jain" class="profile-picture">
+                    <div class="about-text">
+                        <p>
+                            Hello! I'm Prem Kamal Jain, a passionate and driven B.Tech student at IIIT Delhi, specializing in Computer Science and Biosciences.
+                            I have a strong foundation in software development, algorithms, and data structures, complemented by a keen interest in machine learning and its applications.
+                        </p>
+                        <p>
+                            My experience as a Software Engineer Intern at Google allowed me to contribute to impactful projects, developing tools that streamlined processes and enhanced operational efficiency. I'm adept at various technologies including Python, Go, GCP, and C++, and I thrive in collaborative environments where I can solve complex problems and learn continuously.
+                            I'm always eager to take on new challenges and leverage my skills to create innovative solutions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="experience" class="resume-section animate-slide-in-right">
+                <h2>Experience</h2>
+                 <div class="job">
+                    <h3>Software Engineer Intern, Google</h3>
+                    <p class="dates">May 2024 - Aug 2024</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Go Lang, gRPC, REST APIs, GCP (Google Cloud Platform)</p>
+                    <ul>
+                        <li>Developed a migration tool to streamline the transition from IAAS to SAAS, reducing network calls from 3 to 1 and eliminating manual VM migration, improving operational efficiency.</li>
+                        <li>Designed the tool to support multiple workload projects, reducing manual effort by 90%+ and significantly enhancing scalability and customer experience.</li>
+                        <li>Secured a Pre-Placement Offer (PPO) for the work done.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="education" class="resume-section">
+                <h2>Education</h2>
+                <div class="education-item">
+                    <h3>IIIT Delhi</h3>
+                    <p class="dates">Oct 2021 - May 2025</p>
+                    <p>BTech, Computer Science and Biosciences</p>
+                    <p>CGPA: 8.37</p>
+                    <div class="relevant-coursework">
+                        <h4>Relevant Coursework:</h4>
+                        <div class="coursework-columns">
+                            <div class="coursework-category">
+                                <h5>AI & Machine Learning</h5>
+                                <ul>
+                                    <li>Machine Learning</li>
+                                    <li>Deep Learning</li>
+                                    <li>Natural Language Processing</li>
+                                    <li>Data Science</li>
+                                </ul>
+                            </div>
+                            <div class="coursework-category">
+                                <h5>Systems & Networks</h5>
+                                <ul>
+                                    <li>Distributed Systems</li>
+                                    <li>Computer Networks</li>
+                                    <li>Network Security</li>
+                                    <li>Operating Systems</li>
+                                    <li>Database Management</li>
+                                </ul>
+                            </div>
+                            <div class="coursework-category">
+                                <h5>Core CS & Theory</h5>
+                                <ul>
+                                    <li>Algorithm Design and Analysis</li>
+                                    <li>Data Structures and Algorithms</li>
+                                    <li>Object-Oriented Programming</li>
+                                    <li>Ethical Hacking</li>
+                                </ul>
+                            </div>
+                            <div class="coursework-category">
+                                <h5>Mathematical Foundations</h5>
+                                <ul>
+                                    <li>Linear Algebra</li>
+                                    <li>Probability and Statistics</li>
+                                    <li>Multivariate Calculus</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="education-item">
+                    <h3>Army Public School, Lucknow</h3>
+                    <p class="dates">April 2020 – April 2021</p>
+                    <p>Standard 12th, CBSE, Science</p>
+                    <p>Percentage: 94.8%</p>
+                </div>
+            </section>
+
+            <section id="awards" class="resume-section animate-slide-in-left">
+                <h2>Awards and Achievements</h2>
+                <div class="awards-category">
+                    <h4>ICPC</h4>
+                    <ul>
+                        <li>India Team Rank 31 (College Rank 1): ICPC Amritapuri 2022 Qualifier Round; selected for Regionals. <a href="#">Certificate</a></li>
+                        <li>Honorable Mention, ICPC 2022 Asia Amritapuri Doublesite Regional Contest. <a href="#">Certificate</a></li>
+                    </ul>
+                </div>
+                 <div class="awards-category">
+                    <h4>Meta Hacker Cup</h4>
+                    <ul>
+                        <li>Global Rank 1,019, Qualified for the 2nd Round in 2023 Meta Hacker Cup. <a href="#">Certificate</a></li>
+                        <li>Global Rank 2,989, Qualified for the 2nd Round in 2022 Meta Hacker Cup. <a href="#">Certificate</a></li>
+                    </ul>
+                </div>
+                <div class="awards-category">
+                    <h4>Online Coding Platforms</h4>
+                    <ul>
+                        <li> Max. rating of 1559, Specialist-level programmer on Codeforces. Profile - <a href="https://codeforces.com/profile/Prem.kjain" target="_blank">Prem.kjain</a> </li>
+                        <li> Max. rating of 1705, 3-Star level programmer on Codechef. Profile - <a href="https://www.codechef.com/users/pj_2103" target="_blank">pj_2103</a> </li>
+                        <li> Max. rating of 1634, Gradient-level programmer on Leetcode. Profile - <a href="https://leetcode.com/premkjain/" target="_blank">premkjain</a> </li>
+                    </ul>
+                </div>
+                <div class="awards-category">
+                    <h4>Online Coding Contests</h4>
+                     <ul>
+                        <li>Global Rank 1, March Long One 2022 on Codechef. <a href="#">Leaderboard</a></li>
+                        <li>5th Global Team Rank in ProSort Euler 2023, a mathematically intensive programming contest hosted by IIIT Delhi. <a href="#">Leaderboard</a></li>
+                        <li>2nd Rank in ProSort[102] among the B.Tech 2025 batch, a competitive programming contest conducted by FooBar, the Competitive Programming Club of IIIT Delhi. <a href="#">Leaderboard</a></li>
+                    </ul>
+                </div>
+                 <div class="awards-category">
+                    <h4>JEE</h4>
+                    <ul>
+                        <li>Qualified JEE Main exam with All India Rank 7593 (99.27 %ile) amongst 1.1 million aspirants. <a href="#">Score Card</a></li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="projects" class="resume-section animate-slide-in-right">
+                <h2>Projects</h2>
+                <div class="project-item">
+                    <h3>Cryo-EM Resolution Improvement through Enhanced Deep Learning Methods</h3>
+                    <p class="dates">Sept 2024 -- Present</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Python, PyTorch, TensorFlow, 3D U-Net, GANs, DeepEMhancer, FSC, SGD</p>
+                    <ul>
+                        <li>Designed a <strong>Forest of GANs</strong> framework, dynamically selecting the <strong>best pre-trained GAN</strong> for each <code>.mrc</code> input file, and optimized deep learning models (<strong>3D U-Net, GANs</strong>) to enhance cryo-EM resolution.</li>
+                        <li>Evaluated models using <strong>Fourier Shell Correlation (FSC)</strong>, demonstrating significant <strong>resolution gains</strong> in low-pass filtered cryo-EM datasets.</li>
+                        <li>Simulated <strong>degraded cryo-EM maps</strong> and refined model architectures, improving <strong>interpretability and robustness</strong> for structural biology applications.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Online Shopping Platform Communication
+                        <a href="https://github.com/premkjain/Online-Shopping-Platform-Communication" target="_blank" class="project-link"><i class="fab fa-github"></i> Github</a>
+                    </h3>
+                    <p class="dates">Jan 2024 -- May 2024</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Python, gRPC, Protocol Buffers</p>
+                    <ul>
+                        <li>Built a messaging framework for an online shopping platform using <strong>gRPC</strong> and <strong>Protocol Buffers</strong>.</li>
+                        <li>Simulated buyer-seller interactions using <strong>Distributed Systems</strong> concepts for real-time communication.</li>
+                        <li>Enabled seamless interaction between multiple buyers and sellers running on separate VMs, requiring only the marketplace port number for connectivity.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Optical Character Recognition
+                        <a href="https://github.com/premkjain/Optical-Character-Recognition" target="_blank" class="project-link"><i class="fab fa-github"></i> Github</a>
+                    </h3>
+                    <p class="dates">Aug 2023 -- Sept 2023</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Scikit-learn</p>
+                    <ul>
+                        <li>Developed an Optical Character Recognition (OCR) system leveraging <strong>Random Forest, KNN, SVM, and GMM</strong> for accurate text extraction from images, optimizing preprocessing techniques for improved recognition.</li>
+                        <li>Implemented an advanced image preprocessing pipeline using <strong>OpenCV and NumPy</strong>, including grayscale conversion, noise reduction, and thresholding to enhance text readability for machine learning models.</li>
+                        <li>Conducted exploratory data analysis (EDA) on the <strong>Standard OCR Dataset</strong> using <strong>Pandas and Matplotlib</strong>, evaluating dataset characteristics and optimizing feature extraction for robust text recognition.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Peer-to-Many Peer File Copy Program
+                        <a href="https://github.com/premkjain/Inter-Process-Communication" target="_blank" class="project-link"><i class="fab fa-github"></i> Github</a>
+                    </h3>
+                    <p class="dates">April 2023 -- May 2023</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> C, Domain Sockets (AF UNIX), Shared Memory, System Calls</p>
+                    <ul>
+                        <li>Designed and implemented <strong>IPC mechanisms</strong> using <strong>shared memory</strong> and <strong>socket programming</strong> for inter-process communication.</li>
+                        <li>Enabled <strong>fast data exchange</strong> between processes on the same machine using <strong>shared memory</strong> and across machines using <strong>TCP/IP sockets</strong>.</li>
+                        <li>Developed a system for <strong>process coordination</strong>, where one process <strong>writes data</strong> and another <strong>reads it</strong>, ensuring efficient communication.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Tank Star Game
+                        <a href="https://github.com/premkjain/Tank-Star-Game" target="_blank" class="project-link"><i class="fab fa-github"></i> Github</a>
+                    </h3>
+                    <p class="dates">March 2023 -- April 2023</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Java, LibGDX, JavaFX, JUnit</p>
+                    <ul>
+                        <li>Developed a <strong>two-player Tank Stars game</strong> using <strong>LibGDX and Java</strong>, implementing turn-based combat with dynamic terrain and physics-based shooting mechanics.</li>
+                        <li>Designed and integrated a <strong>game-saving and loading system</strong>, enabling players to resume battles with stored game states, including tank health, positions, and terrain orientation.</li>
+                        <li>Applied <strong>object-oriented programming (OOP) principles</strong> such as inheritance, polymorphism, and interfaces, alongside at least two design patterns to ensure modular and maintainable code.</li>
+                        <li>Conducted rigorous <strong>JUnit testing</strong> to validate game mechanics, ensuring a stable and bug-free gaming experience.</li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <h3>Simple RISC Assembler and Simulator
+                        <a href="https://github.com/premkjain/Simple-Assembler-Simulator" target="_blank" class="project-link"><i class="fab fa-github"></i> Github</a>
+                    </h3>
+                    <p class="dates">Aug 2022 -- Sept 2022</p>
+                    <p class="tech-stack"><strong>Tech Stack:</strong> Python, Matplotlib, GitBash</p>
+                    <ul>
+                        <li>Developed an assembler for a 16-bit ISA, translating assembly code into machine code with syntax validation.</li>
+                        <li>Built a CPU simulator to execute machine code, handling registers, memory, and control flow.</li>
+                        <li>Implemented a custom ISA with arithmetic, logical, and control flow instructions, including floating-point support.</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section id="skills" class="resume-section">
+                <h2>Skills</h2>
+                 <div class="skills-category">
+                    <h4>Technical Skills:</h4>
+                    <div class="skill-tags">
+                        <span>GCP</span> <span>Linux</span> <span>CUDA</span> <span>Low-level optimisation</span> <span>Web Deployment</span> <span>CI/CD Pipelines</span> <span>AWS</span> <span>MongoDB</span> <span>Tensorflow</span> <span>Numpy</span> <span>Qiskit</span> <span>MLOps</span>
+                    </div>
+                </div>
+                <div class="skills-category">
+                    <h4>Programming Languages:</h4>
+                    <div class="skill-tags">
+                        <span>C++</span> <span>Python</span> <span>C</span> <span>Java</span> <span>Go</span> <span>Kotlin</span> <span>SQL</span> <span>Bash</span> <span>JavaScript</span> <span>TypeScript</span> <span>Rust</span> <span>R</span>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact" class="resume-section">
+                <h2>Contact Me</h2>
+                <p class="contact-intro">
+                    I'd love to hear from you! Whether you have a question, a project idea, or just want to connect, feel free to reach out using the form below.
+                </p>
+                <form id="contact-form" action="YOUR_GOOGLE_FORM_ACTION_URL_HERE" method="POST" target="hidden_iframe" onsubmit="submitted=true;">
+                    <div class="form-group">
+                        <label for="name">Your Name:</label>
+                        <input type="text" id="name" name="entry.457870372" required placeholder="e.g., John Doe"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email:</label>
+                        <input type="email" id="email" name="entry.557907549" required placeholder="e.g., john.doe@example.com"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="entry.1715909098" placeholder="e.g., Project Collaboration"> 
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="entry.1639194964" rows="6" required placeholder="Your message here..."></textarea> 
+                    </div>
+                    <button type="submit" class="submit-button">Send Message <i class="fas fa-paper-plane"></i></button>
+                </form>
+                <p id="form-submission-message" style="display:none;"></p>
+            </section>
+            <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;" onload="if(submitted){handleFormSubmission();}"></iframe>
+
+        </main>
+
+        <footer id="page-navigation-footer">
+            <nav>
+                <a href="#about">About</a>
+                <a href="#experience">Experience</a>
+                <a href="#education">Education</a>
+                <a href="#awards">Awards</a>
+                <a href="#projects">Projects</a>
+                <a href="#skills">Skills</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </footer>
+
+        <footer id="copyright-footer">
+            <p>© <span id="current-year"></span> Prem Kamal Jain. All rights reserved.</p>
+        </footer>
+    </div> <!-- End of .container -->
+
+    <button id="back-to-top" title="Go to top"><i class="fas fa-angle-up"></i></button>
+
+    <script src="script.js"></script>
+</body>
+</html>
